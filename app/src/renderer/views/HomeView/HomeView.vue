@@ -11,8 +11,8 @@
 
 <script>
 
-	import MenuButton from './../../views/shared/MenuButton.vue';
-	import PageOverlay from './../../views/shared/PageOverlay.vue';
+	import PageOverlay from './../../views/shared/PageOverlay/PageOverlay.vue';
+	import MenuButton from './../../views/shared/MenuButton/MenuButton.vue';
 
 	export default {
 		components: {

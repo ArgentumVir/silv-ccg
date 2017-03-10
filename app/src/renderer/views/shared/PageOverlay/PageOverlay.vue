@@ -6,9 +6,9 @@
 </template>
 
 <script>
-	import SettingsModal from './SettingsModal.vue';
-	import grayIcon from './assets/settings-icon.png';
-	import whiteIcon from './assets/settings-icon-white.png';
+	import SettingsModal from './../SettingsModal/SettingsModal.vue';
+	import grayIcon from './../assets/settings-icon.png';
+	import whiteIcon from './../assets/settings-icon-white.png';
 
 	export default {
 		components: {
@@ -35,14 +35,11 @@
 
 <style scoped>
 	.settings-icon {
-		position:absolute;
 		z-index: 3999;
-		float: right;
 		position: absolute;
-		top: 0px;
-		right: 0px;
-		width: 5vw;
-		padding: 2vw;
+		top: 1.5vw;
+		right: 2.5vw;
+		width: 3vw;
 		opacity: .8;
 	}
 

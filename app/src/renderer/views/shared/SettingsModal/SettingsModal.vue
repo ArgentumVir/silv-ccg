@@ -6,19 +6,18 @@
 
 					<div class="modal-header">
 						<slot name="header">
-							default header
+							Settings
 						</slot>
 					</div>
 
 					<div class="modal-body">
 						<slot name="body">
-							default body
+							[[ NOT IMPLEMENTED ]]
 						</slot>
 					</div>
 
 					<div class="modal-footer">
 						<slot name="footer">
-							default footer
 						</slot>
 					</div>
 				</div>

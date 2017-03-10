@@ -1,24 +1,22 @@
 <template>
-	<div>
-		<router-link :to="{ name: page }">{{text}}</router-link>
-	</div>
+	<router-link :class="['default-style', className]" :to="{ name: page }">{{text}}</router-link>
 </template>
 
 <script>
 	export default {
 		props: [
 			'text',
-			'page'
+			'page',
+			'className'
 		]
 	};
 
 </script>
 
-<style scoped>
-	a {
+<style>
+	.default-style {
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 7vw;
 		text-align: center;
 		width: 20vw;
 		font-size: 3vw;
@@ -31,16 +29,27 @@
 		color: black;
 		text-decoration: none;
 		font-family: Arial;
+		margin-top: 6vw;
 	}
 
-
-	a:hover {
+	.default-style:hover {
 		color: gray;
 	}
 
-	a:active {
+	.default-style:active {
 		color: #696969;
 	}
+</style>
 
-
+<style>
+	.back-button {
+		color: black;
+		width: 7vw;
+		position: absolute;
+		bottom: 1.5vw;
+		font-size: 2vw;
+		left: 2.5vw;
+		height: 1.225vw;
+		line-height: 1.225vw;
+	}
 </style>
